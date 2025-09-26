@@ -74,23 +74,6 @@ const translations = {
     
     // News Update
     newsUpdate: "News Update",
-    
-    // Navigation
-    navigation: "Navigation",
-    
-    // News and updates
-    newsUpdates: "Latest News",
-    readMore: "Read More",
-    previous: "Previous",
-    next: "Next",
-    
-    // User profile
-    employeeId: "Employee ID",
-    department: "Department",
-    status: "Status",
-    active: "Active",
-    settings: "Settings",
-    signOut: "Sign Out",
   },
   ar: {
     // Header
@@ -154,23 +137,6 @@ const translations = {
     
     // News Update
     newsUpdate: "آخر الأخبار",
-    
-    // Navigation
-    navigation: "التنقل",
-    
-    // News and updates
-    newsUpdates: "آخر الأخبار",
-    readMore: "اقرأ المزيد",
-    previous: "السابق",
-    next: "التالي",
-    
-    // User profile
-    employeeId: "رقم الموظف",
-    department: "القسم",
-    status: "الحالة",
-    active: "نشط",
-    settings: "الإعدادات",
-    signOut: "تسجيل الخروج",
   }
 };
 
