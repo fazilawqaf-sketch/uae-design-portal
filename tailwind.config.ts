@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -30,6 +31,26 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        uae: {
+          red: "hsl(var(--uae-red))",
+          green: "hsl(var(--uae-green))",
+          black: "hsl(var(--uae-black))",
+          white: "hsl(var(--uae-white))",
+        },
+        theme: {
+          teal: "hsl(var(--theme-teal))",
+          "teal-light": "hsl(var(--theme-teal-light))",
+          green: "hsl(var(--theme-green))",
+          "green-light": "hsl(var(--theme-green-light))",
+          brown: "hsl(var(--theme-brown))",
+          "brown-light": "hsl(var(--theme-brown-light))", 
+          gold: "hsl(var(--theme-gold))",
+          "gold-light": "hsl(var(--theme-gold-light))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -62,6 +83,17 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        sm: "var(--shadow-sm)",
+        DEFAULT: "var(--shadow)",
+        md: "var(--shadow-md)",
+        lg: "var(--shadow-lg)",
+        xl: "var(--shadow-xl)",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-hero": "var(--gradient-hero)",
       },
       keyframes: {
         "accordion-down": {
