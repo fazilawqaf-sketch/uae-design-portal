@@ -100,9 +100,9 @@ const DashboardGrid = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-6 md:py-8">
       {/* Top Dashboard Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-8">
         {/* My Tasks */}
         <DashboardCard title={t('myTasks')} icon={CheckSquare}>
           <ul className="space-y-3">
@@ -171,9 +171,9 @@ const DashboardGrid = () => {
       </div>
 
       {/* Bottom Content Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {/* New Employees */}
-        <DashboardCard title={t('newEmployees')} icon={User} className="lg:col-span-1">
+        <DashboardCard title={t('newEmployees')} icon={User} className="md:col-span-1 lg:col-span-1">
           <div className="text-center py-8">
             <div className="w-16 h-16 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
               <User className="w-8 h-8 text-primary" />
@@ -193,7 +193,7 @@ const DashboardGrid = () => {
         </DashboardCard>
 
         {/* Events */}
-        <DashboardCard title={t('events')} icon={CalendarDays} className="lg:col-span-1">
+        <DashboardCard title={t('events')} icon={CalendarDays} className="md:col-span-1 lg:col-span-1">
           <div className="space-y-4">
             <div className="bg-primary/10 rounded-lg p-3">
               <div className="flex items-center justify-between mb-2">
@@ -218,7 +218,7 @@ const DashboardGrid = () => {
         </DashboardCard>
 
         {/* Announcements */}
-        <DashboardCard title={t('announcements')} icon={Megaphone} className="lg:col-span-1">
+        <DashboardCard title={t('announcements')} icon={Megaphone} className="md:col-span-2 lg:col-span-1">
           <div className="space-y-4">
             <div className="border-l-4 border-primary pl-4">
               <div className="flex items-center justify-between mb-1">
@@ -242,25 +242,6 @@ const DashboardGrid = () => {
         </DashboardCard>
       </div>
 
-      {/* News Update Banner */}
-      <div className="mt-8 bg-primary text-primary-foreground p-4 rounded-lg">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4 rtl:space-x-reverse">
-            <div className="bg-primary-foreground/20 rounded-full p-2">
-              <Megaphone className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="font-semibold">{t('newsUpdate')}:</h3>
-              <p className="text-sm opacity-90">
-                H.E. Dr. Omar Habtoor Al Darei, Chairman of the General Authority of Islamic Affairs, Endowments, and Zakah (Awqaf), received at the Authority's headquarters in Abu Dhabi H.H. Prince Amir Nasser Ibrahim...
-              </p>
-            </div>
-          </div>
-          <Button variant="secondary" size="sm">
-            {t('more')}
-          </Button>
-        </div>
-      </div>
     </div>
   );
 };
